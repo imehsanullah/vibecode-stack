@@ -37,12 +37,6 @@ oauth-model-alias:
     - name: "gpt-5.6-luna"
       alias: "gpt-5.6-luna-low-fast"
       fork: true
-    - name: "gpt-5.5"
-      alias: "gpt-5.5-xhigh-fast"
-      fork: true
-    - name: "gpt-5.5"
-      alias: "gpt-5.5-high-fast"
-      fork: true
 payload:
   override:
     - models:
@@ -99,15 +93,3 @@ payload:
       params:
         service_tier: "priority"
         reasoning.effort: "low"
-    - models:
-        - name: "gpt-5.5-xhigh-fast"
-          protocol: "codex"
-      params:
-        service_tier: "priority"
-        reasoning.effort: "xhigh"
-    - models:
-        - name: "gpt-5.5-high-fast"
-          protocol: "codex"
-      params:
-        service_tier: "priority"
-        reasoning.effort: "high"
